@@ -13,16 +13,16 @@ JavaScript: Lógica do jogo, movimentação da nave, controle de pontuação e i
 
 Estrutura do Projeto
 
-📦Jogo
- ┣ 📂assets
- ┃ ┗ 📂images
- ┃ ┃ ┣ 🖼️ image1.jpg
- ┃ ┃ ┗ 🖼️ image2.png
- ┣ 📂css
- ┃ ┗ 📄 style.css
- ┣ 📂js
- ┃ ┗ 📄 script.js
- ┗ 📄 index.html
+Jogo
+ ┣ assets
+ ┃ ┗ images
+ ┃ ┃ ┣  image1.jpg
+ ┃ ┃ ┗  image2.png
+ ┣ css
+ ┃ ┗  style.css
+ ┣ js
+ ┃ ┗  script.js
+ ┗  index.html
 
  
 Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato.
