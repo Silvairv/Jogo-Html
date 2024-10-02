@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Paradigma</title>
+</head>
+<body>
+
+ <div class="hero">
+    <nav>
+        <h2 class="logo"></h2>
+        <ul>
+            <li><a href="index.html">Paradigma </a></li>
+            <li><a href="linguagem.html">Linguagem</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+        <h2 class="logo"></h2>
+    </nav>
+ </div>
+
+
+    <header>
+        <h1>Paradigma de Programação em Lógica</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introdução ao Paradigma de Programação em Lógica</h2>
+            <p>O <em>paradigma de programação em lógica</em> é um modelo de computação que se baseia na ideia de representar problemas na forma de proposições lógicas, em contraste com o modelo procedural de execução encontrado em linguagens imperativas, como o modelo von Neumann. O principal objetivo da programação em lógica é permitir que o programador descreva o <em>que</em> precisa ser realizado, deixando o <em>como</em> a cargo da máquina de inferência.</p>
+            <p>Neste paradigma, a execução de um programa não envolve uma sequência de comandos explícitos, mas sim a definição de um conjunto de fatos e regras que modelam o problema em questão. A partir dessa base de conhecimento, a máquina aplica inferências lógicas para chegar a uma solução.</p>
+        </section>
+
+        <section>
+            <h2>Diferença Entre Programação Declarativa e Imperativa</h2>
+            <p>A principal característica da <em>programação em lógica</em> é sua <em>semântica declarativa</em>, o que a distingue das linguagens imperativas. Na programação declarativa, o programador especifica apenas os fatos e as relações entre eles, enquanto a linguagem se encarrega de encontrar a solução. Em outras palavras, o foco é na <strong>descrição do problema</strong> em termos lógicos e não no controle de execução, como ocorre nas linguagens imperativas, onde o programador deve detalhar passo a passo como o computador deve executar uma tarefa.</p>
+            <p>Por exemplo, para calcular o fatorial de um número, em vez de escrever um algoritmo procedural que detalha a sequência exata de operações, o paradigma lógico permite descrever simplesmente fatos e regras que definem o conceito de fatorial, como:</p>
+            <ul>
+                <li>"O fatorial de 0 é 1" (um fato).</li>
+                <li>"O fatorial de N é o produto de N e o fatorial de N-1" (uma regra).</li>
+            </ul>
+            <p>Essa abordagem transforma a execução do programa em um processo de dedução, no qual o sistema de inferência busca uma solução com base nas declarações fornecidas, em vez de seguir uma sequência predefinida de operações.</p>
+        </section>
+
+        <section>
+            <h2>Semântica Declarativa e Inferência Lógica</h2>
+            <p>Uma das características centrais do paradigma lógico é a sua <em>semântica declarativa</em>. Isso significa que o significado de cada declaração no programa é inerente a ela mesma, sem depender do contexto ou da ordem de execução. A execução do programa consiste em formular consultas sobre a base de conhecimento, e o sistema de inferência busca provas que satisfaçam essas consultas.</p>
+            <p>Por exemplo, se o objetivo é encontrar o fatorial de um número, a máquina de inferência explorará os fatos e as regras para construir uma solução lógica. O papel do programador é fornecer as regras e fatos corretos, e o sistema se encarrega de <em>inferir</em> a solução.</p>
+        </section>
+
+        <section>
+            <h2>Paradigma Lógico e Máquina de Inferência</h2>
+            <p>No paradigma de programação em lógica, o computador atua como uma <em>máquina de inferência</em>. A máquina processa as regras e fatos declarados e utiliza um mecanismo de busca para encontrar provas construtivas que respondam às perguntas do usuário.</p>
+            <p>Esse processo é radicalmente diferente da programação imperativa, onde o programador é responsável por definir exatamente como o computador deve realizar a tarefa. Em vez disso, a máquina lógica percorre possíveis deduções até encontrar uma solução ou provar que não existe uma resposta consistente para a consulta.</p>
+            <p>Por exemplo, em um programa de cálculo de fatorial, em vez de iterar ou recursivamente computar o valor, a máquina de inferência deduzirá o resultado de forma construtiva a partir das regras lógicas estabelecidas.</p>
+        </section>
+
+        <section>
+            <h2>Vantagens e Desafios do Paradigma de Programação em Lógica</h2>
+            <p>A programação em lógica oferece diversas vantagens:</p>
+            <ul>
+                <li><em>Separação entre lógica e controle</em>: O programador não precisa definir explicitamente a ordem das operações, focando apenas nas regras lógicas que descrevem o problema. O controle da execução é responsabilidade do sistema, o que pode facilitar o desenvolvimento e a manutenção de programas complexos.</li>
+                <li><em>Foco na resolução de problemas</em>: Como o paradigma foca na lógica do problema, ele é particularmente útil para resolver problemas de natureza declarativa, como sistemas de raciocínio automatizado, sistemas especialistas e busca em inteligência artificial.</li>
+            </ul>
+            <p>No entanto, o paradigma lógico também apresenta desafios:</p>
+            <ul>
+                <li><em>Propriedade formal</em>: Linguagens baseadas em lógica podem ser mais fáceis de analisar formalmente, permitindo provar propriedades do programa, como sua correção e completude, por meio de técnicas matemáticas.</li>
+                <li><em>Controle de execução oculto</em>: Embora seja uma vantagem deixar o controle da execução para a máquina de inferência, isso pode também se tornar uma desvantagem, já que o programador perde o controle direto sobre como as operações são realizadas. Isso pode levar a comportamentos inesperados ou ineficiências, especialmente se o programador não entender bem os mecanismos de inferência.</li>
+                <li><em>Dificuldade em problemas procedurais</em>: Embora a programação lógica seja excelente para resolver problemas declarativos, como aqueles envolvendo dedução, ela pode não ser a melhor escolha para tarefas que exigem um controle procedural claro, como a manipulação direta de estruturas de dados ou algoritmos altamente sequenciais.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+            <p>O paradigma de <em>programação em lógica</em> oferece uma visão poderosa e diferenciada de computação, onde o foco está na <em>descrição do problema</em> e não no controle de sua execução. Essa abordagem é especialmente útil em domínios onde a dedução lógica e a resolução de problemas com base em regras são centrais, como em inteligência artificial, sistemas especialistas e verificação formal.</p>
+            <p>Ao permitir que o programador descreva o que deve ser feito, e delegando ao sistema o controle de como isso será realizado, a programação em lógica possibilita a construção de programas mais abstratos, flexíveis e de fácil manutenção. No entanto, a perda de controle explícito sobre a execução e a dificuldade em tratar problemas mais procedurais podem apresentar obstáculos para a adoção desse paradigma em determinados contextos.</p>
+        </section>
+    </main>
+
+
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+
+
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    <div >
+        <nav>
+            <h2 class="logo"></h2>
+            
+            <h2 class="logo"></h2>
+        </nav>
+    </div>
+    
+
+ <footer>
+    <div class="footer-content">
+        <h3>Paradigma Lógico</h3>
+        <p>Linguagem de Programação: Javascript</p>
+        <div class="members">
+            <h4>Membros:</h4>
+            <li>Isake Assis Abreu Molina - RGM: 30260671</li>
+            <li>Diogo Santiago Coutinho - RGM: 35983451</li>
+            <li>Cauê Gaspar Macrini - RGM: 30304288</li>
+            <li>Matheus da Silva Schonhardt - RGM: 32132239</li>
+            <li>Gabriel Rodrigues da Silva - RGM: 29764335</li>
+            <li>Gabriel Oliveira - RGM: 30592682</li>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

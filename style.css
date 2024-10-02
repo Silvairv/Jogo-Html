@@ -1,0 +1,372 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+.teclas {
+    width: 100px;
+    height: 100px;
+    margin: 55vh auto 0 auto;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    background-color: #161625; 
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    flex: 1; 
+    padding: 20px;
+    color: #020101; 
+}
+
+#game {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 10vh auto 0 auto; 
+    position: relative;
+    overflow: hidden;
+    background: url('./images/space1.jpg') no-repeat center center; 
+    background-size: cover; 
+}
+
+.personagem {
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+}
+
+.enemy-nave {
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    animation: move-enemy 4s infinite linear;
+}
+
+#pontuacao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@keyframes quadrado-horizontal {
+    0% { left: 480px; }
+    100% { left: -40px; }
+}
+
+.clouds {
+    position: absolute;
+    width: 350px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+.hero {
+    height: 7vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+nav ul li {
+    list-style-type: black;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(248, 8, 8);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #1a1a2e; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    width: 100%; 
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f4b41a; 
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-content .members h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #ffffff; 
+}
+
+p {
+    line-height: 1.6;
+    color: #cccccc; 
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #080101;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #af4f4c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #da0c0c; 
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-content .members h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.hero {
+    background-color: #b64040;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #da0404;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Novas estilizações */
+.content-section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #e02929;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f70606;
+}
+
+main h2 {
+    color: #ec0808;
+}
+
+main p {
+    font-size: 28px;
+    color: #030000;
+    line-height: 1.8;
+}
+
+footer .footer-content h3 {
+    font-size: 25px;
+}
+
+.footer-content ul li {
+    font-size: 10px;
+}
